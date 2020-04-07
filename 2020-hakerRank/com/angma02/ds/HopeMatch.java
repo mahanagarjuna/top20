@@ -14,7 +14,7 @@ public class HopeMatch {
             System.out.println("NO");
             return "NO";
         } else {
-            while(x1v1 != x2v2){
+            while(x1v1 != x2v2 && x1v1 < x2v2){
                 x1v1 += v1;
                 x2v2 += v2;
                 System.out.println(x1v1 + " " + x2v2);
@@ -29,7 +29,6 @@ public class HopeMatch {
         int x2v2 = x2;
         if (x2 <= x1 || v2 >= v1) {
             return "NO";
-            
         } 
         else  
         {
@@ -61,8 +60,8 @@ public class HopeMatch {
 
         int v2 = Integer.parseInt(x1V1X2V2[3]);
 
-        // String result = kangaroo(x1, v1, x2, v2);
-        String result = kangaroo_v2(x1, v1, x2, v2);
+        String result = kangaroo(x1, v1, x2, v2);
+        //String result = kangaroo_v2(x1, v1, x2, v2);
 
         bufferedWriter.write(result);
         bufferedWriter.newLine();
