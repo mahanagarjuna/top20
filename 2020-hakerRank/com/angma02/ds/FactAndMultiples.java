@@ -51,7 +51,4 @@ public class FactAndMultiples {
         bufferedReader.close();
         bufferedWriter.close();
     }
-    
-    
-
 }
