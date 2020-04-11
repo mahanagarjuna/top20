@@ -7,6 +7,7 @@ import static java.util.stream.Collectors.toList;
 
 public class Chocolate {
 
+    
     // Complete the birthday function below.
     static int birthday(List<Integer> s, int d, int m) {
         int temp = 0;
