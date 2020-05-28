@@ -15,6 +15,9 @@ public class ScheSample {
         for (int i = 0; i < 100; i++) {
             sService.schedule(new Task(), 10, TimeUnit.MILLISECONDS);
         }
+        sService.scheduleAtFixedRate(new Task(), 15, 10, TimeUnit.SECONDS);
+
+        sService.scheduleWithFixedDelay(new Task(), 15, 10, TimeUnit.SECONDS);
         long endTime = System.currentTimeMillis();
         System.out.println("TName: " + Thread.currentThread().getName());
         System.out.println("Time taken(sec): " + (endTime - startTime) / 1000);
